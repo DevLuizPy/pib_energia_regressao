@@ -123,6 +123,21 @@ plt.show()
 
 Em primeira análise, observamos a correlação entre a variação do PIB mensal com o consumo de energia elétrica. A teoria para tal é que, no caso do PIB aumentar, o consumo de energia elétrica também aumentará, visto que um aumento do Produto Interno Bruto representaria uma maior demanda de energia elétrica por parte dos consumidores. As estatísticas sugerem que tal teoria se mantém: o gráfico demonstra que conforme o PIB mensal aumenta, o consumo de energia o acompanha. A regressão linear também dá suporte a veracidade da teoria, com a hipótese nula (na qual a variável PIB não teria correlação com a variável energia) sendo rejeitada. O R-quadrado tem valor de 85,7%, sugerindo que essa é a porcentagem do consumo de energia que pode ser explicado pela variável PIB. O coeficiente de correlação é de 0,93, o que indica correlação fortíssima entre as variáveis. 
 
+## 5. Resultados - Regressão multipla
 
+| **Variável** | **Coeficiente** | **Erro Padrão** | **Estatística t** | **P-valor** | **[0.025** | **0.975]** |
+|--------------|-----------------|-----------------|-------------------|-------------|------------|------------|
+| Constante    | 0.2341           | 0.061           | 3.858             | 0.000       | 0.115      | 0.354      |
+| x1           | 0.4083           | 0.062           | 6.563             | 0.000       | 0.359      | 0.458      |
+| x2           | 0.2337           | 0.052           | 4.493             | 0.000       | 0.131      | 0.336      |
+| x3           | 0.2713           | 0.025           | 10.710            | 0.000       | 0.221      | 0.321      |
 
+**R-squared**: 0.953
 
+A regressão múltipla mostra um coeficiente dedeterminação de 0,953. A hipótese de que nãohá correlação entre as variáveis é recusada. Omapa de calor, no entanto, indica que a indústriadestoa das outras variáveis e tem um baixo nívelde correlação. Isso pode ser explicado peladiversificada matriz energética industrialpreviamente mencionada. Por outro lado, energia,comércio e petróleo, mostram grande correlaçãoentre si, todas consideradas fortes oufortíssimas.Por fim, conclui-se que o consumo de energiaelétrica no Brasil é afetado por todas as variáveisestudadas. Todos os dados abordados sugeremuma correlação positiva entre as variáveisdependente e independente, exceto entreindústria e petróleo. Como observado na primeira correlação linear, acada unidade de aumento do PIB, há umaumento de 0,12 no consumo de energia. Portanto, é necessário que conforme o Brasilcresça, haja uma diversificação da matriz elétricapara absorver o aumento de demanda. Dados de2022 indicam que a produção é mais de 60%provida por hidrelétricas, que são frágeis a secas. Caso a oferta de eletricidade não acompanhe oaumento de demanda, um momento de escassezde chuva pode causar uma grave crise energéticanacional.
+
+## 6. Resultados - Regressão multipla
+
+EMPRESA DE PESQUISA ENERGÉTICA (EPE). Matriz energética e elétrica. Disponível em: https://www.epe.gov.br/pt/abcdenergia/matriz-energetica-e-eletrica. Acesso em: 22 set. 2024.
+
+BANCO CENTRAL DO BRASIL (BCB). Séries temporais. Disponível em: https://www3.bcb.gov.br/sgspub/. Acesso em: 22 set. 2024.
