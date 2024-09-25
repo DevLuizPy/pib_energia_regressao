@@ -10,9 +10,17 @@ Email: luizfcefetrj@gmail.com | victor.assump9@gmail.com
 
 ## Sumário
 
+1. [Introdução](#1-introdução)
+2. [Metodologia](#2-metodologia)
+3. [Código](#3-código)
+4. [Resultados regressão linear](#4-resultados---regressão-linear)
+5. [Resultados - Regressão multipla](#5-resultados---regressão-multipla)
+6. [Bibliografia](#6-Bibliografia)
+
+
 ## 1. Introdução
 
-Este trabalho busca estudar o consumo de energia elétrica no Brasil, com investigações acerca da correlação entre nosso objeto de estudo com diversas outras variáveis, que vão desde variáveis macroeconômicas – como PIB e emprego – até recursos naturais, como petróleo e gás natural. Também investigamos o consumo de energia elétrica em setores específicos, mais precisamente o comercial e o industrial. Nosso objetivo é desvendar os detalhes do consumo de eletricidade do país, e como ele é afetado por outras variáveis econômicas que consideramos relevantes para esse trabalho.
+Este trabalho busca estudar o consumo de energia elétrica no Brasil, com investigações acerca da correlação entre o nosso objeto de estudo com diversas outras variáveis, que vão desde variáveis macroeconômicas – como PIB e emprego – até recursos naturais, como petróleo e gás natural. Também investigamos o consumo de energia elétrica em setores específicos, mais precisamente o comercial e o industrial. O nosso objetivo é desvendar os detalhes do consumo de eletricidade do país, e como ele é afetado por outras variáveis econômicas que consideramos relevantes para esse trabalho.
 
 ## 2. Metodologia
 
@@ -116,8 +124,8 @@ plt.show()
 
 | **Variável** | **Coeficiente** | **Erro Padrão** | **Estatística t** | **P-valor** | **[0.025** | **0.975]** |
 |--------------|-----------------|-----------------|-------------------|-------------|------------|------------|
-| Constante    | 1.1287           | 0.013           | 84.862            | 0.000       | 1.103      | 1.155      |
-| PIB_Mes      | 0.1211           | 0.003           | 38.395            | 0.000       | 0.115      | 0.127      |
+| Constante    | 1.1287          | 0.013           | 84.862            | 0.000       | 1.103      | 1.155      |
+| PIB_Mes      | 0.1211          | 0.003           | 38.395            | 0.000       | 0.115      | 0.127      |
 
 **R-squared**: 0.852
 
@@ -127,16 +135,16 @@ Em primeira análise, observamos a correlação entre a variação do PIB mensal
 
 | **Variável** | **Coeficiente** | **Erro Padrão** | **Estatística t** | **P-valor** | **[0.025** | **0.975]** |
 |--------------|-----------------|-----------------|-------------------|-------------|------------|------------|
-| Constante    | 0.2341           | 0.061           | 3.858             | 0.000       | 0.115      | 0.354      |
-| x1           | 0.4083           | 0.062           | 6.563             | 0.000       | 0.359      | 0.458      |
-| x2           | 0.2337           | 0.052           | 4.493             | 0.000       | 0.131      | 0.336      |
-| x3           | 0.2713           | 0.025           | 10.710            | 0.000       | 0.221      | 0.321      |
+| Constante    | 0.2341          | 0.061           | 3.858             | 0.000       | 0.115      | 0.354      |
+| x1           | 0.4083          | 0.062           | 6.563             | 0.000       | 0.359      | 0.458      |
+| x2           | 0.2337          | 0.052           | 4.493             | 0.000       | 0.131      | 0.336      |
+| x3           | 0.2713          | 0.025           | 10.710            | 0.000       | 0.221      | 0.321      |
 
 **R-squared**: 0.953
 
-A regressão múltipla mostra um coeficiente dedeterminação de 0,953. A hipótese de que nãohá correlação entre as variáveis é recusada. Omapa de calor, no entanto, indica que a indústriadestoa das outras variáveis e tem um baixo nívelde correlação. Isso pode ser explicado peladiversificada matriz energética industrialpreviamente mencionada. Por outro lado, energia,comércio e petróleo, mostram grande correlaçãoentre si, todas consideradas fortes oufortíssimas.Por fim, conclui-se que o consumo de energiaelétrica no Brasil é afetado por todas as variáveisestudadas. Todos os dados abordados sugeremuma correlação positiva entre as variáveisdependente e independente, exceto entreindústria e petróleo. Como observado na primeira correlação linear, acada unidade de aumento do PIB, há umaumento de 0,12 no consumo de energia. Portanto, é necessário que conforme o Brasilcresça, haja uma diversificação da matriz elétricapara absorver o aumento de demanda. Dados de2022 indicam que a produção é mais de 60%provida por hidrelétricas, que são frágeis a secas. Caso a oferta de eletricidade não acompanhe oaumento de demanda, um momento de escassezde chuva pode causar uma grave crise energéticanacional.
+A regressão múltipla mostra um coeficiente de determinação de 0,953. A hipótese de que não há correlação entre as variáveis é recusada. O mapa de calor, no entanto, indica que a indústria destoa das outras variáveis e tem um baixo nívelde correlação. Isso pode ser explicado pela diversificada matriz energética industrial previamente mencionada. Por outro lado, energia, comércio e petróleo, mostram grande correlação entre si, todas consideradas fortes ou fortíssimas. Por fim, conclui-se que o consumo de energia elétrica no Brasil é afetado por todas as variáveis estudadas. Todos os dados abordados sugerem uma correlação positiva entre as variáveis dependente e independente, exceto entre indústria e petróleo. Como observado na primeira correlação linear, a cada unidade de aumento do PIB, há um aumento de 0,12 no consumo de energia. Portanto, é necessário que a medida que o Brasil cresça, haja uma diversificação da matriz elétrica para absorver o aumento de demanda. Dados de 2022 indicam que a produção é mais de 60% proveniente de hidrelétricas, que são frágeis a secas. Caso a oferta de eletricidade não acompanhe oaumento de demanda, um momento de escassez de chuva pode causar uma crise energética nacional.
 
-## 6. Resultados - Regressão multipla
+## 6. Bibliografia
 
 EMPRESA DE PESQUISA ENERGÉTICA (EPE). Matriz energética e elétrica. Disponível em: https://www.epe.gov.br/pt/abcdenergia/matriz-energetica-e-eletrica. Acesso em: 22 set. 2024.
 
